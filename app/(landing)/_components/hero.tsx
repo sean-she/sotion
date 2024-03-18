@@ -20,7 +20,7 @@ const Hero = () => {
                     alt="documents"
                 />
             </div>
-            <div className="relative w-[400px] h-[400px] hidden md:block">
+            <div className="relative w-[400px] h-[400px]  md:block">
                 {/* Hidden in Dark Mode */}
                 <Image
                     src="/reading.png"
