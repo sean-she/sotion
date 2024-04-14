@@ -12,7 +12,7 @@ import { toast } from "sonner";
 const DocumentsPage = () => {
     const router = useRouter();
     const { user } = useUser();
-    const create = useMutation(api.docuemnts.create);
+    const create = useMutation(api.documents.create);
 
     const onCreate = () => {
         const promise = create({ title: "Untitled" });
