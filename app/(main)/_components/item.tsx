@@ -15,14 +15,14 @@ import { toast } from 'sonner';
 
 interface ItemProps {
     id?: Id<"documents">;
-    doucmentIcon?: string;
+    documentIcon?: string;
     active?: boolean;
     expanded?: boolean;
     isSearch?: boolean;
     level?: number;
     onExpand?: () => void;
     label: string;
-    onClick: () => void;
+    onClick?: () => void;
     icon: LucideIcon
 }
 
@@ -32,7 +32,7 @@ export const Item = ({
     onClick,
     icon: Icon,
     active,
-    doucmentIcon,
+    documentIcon,
     isSearch,
     level = 0,
     onExpand,
@@ -107,9 +107,9 @@ export const Item = ({
                     />
                 </div>
             )}
-            {doucmentIcon ? (
+            {documentIcon ? (
                 <div className='shrink-0 mr-2 text-[18px]'>
-                    {doucmentIcon}
+                    {documentIcon}
                 </div>
             ): (
                 <Icon className='shrink-0 h-[18px] mr-2 text-muted-foreground'/>
